@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    height: 100%;
+}
+
+
+/* ESTILIZACÃO HEADER */
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: #FF914D;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar img {
+    max-width: 20vh;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#checkbox-menu, .navbar #hamburguer{
+    display: none;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: end;
+        padding: 25px;
+        
+    }
+    .navbar #hamburguer{
+        display: block;
+        align-items: center;
+        cursor: pointer;  
+        color: #FF914D;
+        border-radius: 4px;
+
+
+    }
+    #checkbox-menu:checked ~ .menu{
+        max-height: 100%;    
+    }
+    
+    .navbar{
+        height: 100%;
+        display: flex;
+    
+    }
+    
+    #checkbox-menu{
+        position: absolute;
+        opacity: 0;
+    }
+    
+    #hamburguer {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 20px;
+        width: 30px;
+        background-color: #FF914D;
+    }
+    
+}
+
+/* ESTILIZACÃO MAIN */
+/* Texto em cima do Background inicial*/
+
+.texto-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background-image: url(./Imagens/mulher-laranja-cartao.png);
+    background-size: cover;
+    padding: 0px 0px 8px 0px;
+    
+}
+
+.texto {
+    padding: 16px 10px 0 210px;
+    
+}
+
+.texto h3{
+    font-size: 15px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.texto h5{
+    font-size: 10px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    padding: 1px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* Formulário Abra sua Conta */
+
+
+.abra-sua-conta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vh;
+    height: 20vh;
+    margin: 25px 50px;
+    padding: 12px 20px;
+    background-color: white;
+    opacity: 80%;
+    border-radius: 20px;
+
+    
+}
+
+
+#cpf {
+    font-size: 12px;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.formulario h2{
+    font-size: 15px;
+    display: flex;
+    padding: 0 0 2px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario h6{
+    font-size: 12px;
+    display: flex;
+    padding: 0 0 5px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#cpf input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 5px;
+    width: 29vh;
+}
+
+.form-add {
+    padding: 5px 0;
+    
+} 
+
+.form-add button{
+
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 29vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* Conta Digital */
+
+.conta-digital{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.card img{
+    max-height: 100vh;
+}
+
+.conta-digital h1{
+    font-size: 20px;
+    color: #FF914D;
+    padding: 0 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.conta-digital p{
+    font-size: 12px;
+    padding: 0 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    width: 20vh;
+    height: 40vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+        
+}
+
+.card-image {
+    
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+    transition: transform .80s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+#img-conta img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Nossos cartões */
+
+.nossos-cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.card-cartao img{
+    padding: 5vh 0 0;
+    max-width: 20vh;
+    max-height: 100%;
+}
+
+.nossos-cartoes h1{
+    font-size: 20px;
+    color: #FF914D;
+    padding: 0 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nossos-cartoes p{
+    font-size: 12px;
+    padding: 0 0 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#img-propaganda-cartao img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Contatos */
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    padding: 30px 40px 15px;
+    background-image: url(./Imagens/layout-rodape.png);
+    background-size:cover;
+
+}
+
+.contatos h2{
+    font-size: 23px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 0;
+}
+
+.contatos p{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+}
+
+.img-apps{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-apps img{
+    max-width: 25vh;
+    max-height: 100%;
+}
+
+.img-redessociais img{
+    max-width: 5vh;
+    max-height: 100%;
+
+}
+
+.img-redessociais{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.icon {
+    animation: float 5s ease-in-out infinite;
+    padding: 0 10px;
+}
+
+.redesocial {
+    animation-delay: 1s;
+}
+
+.redesocial1 {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+footer h4{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+h4{
+    padding: 1.5px;
+}
+
+.rodape{
+    padding: 10px
+}
+
+
+@media screen and (min-device-width: 475px) and (max-device-width: 580px) {
+    .texto {
+        padding: 16px 50px 0 270px;
+    }
+
+}
+    
+@media screen and (min-device-width: 580px) and (max-device-width: 720px) {
+    .texto {
+            padding: 16px 50px 0 350px;
+    }
+    .texto h3{
+        font-size: 20px;
+    } 
+    .texto h5{
+        font-size: 15px;
+    }
+    .conta-digital h1{
+        font-size: 30px;
+    }
+    .conta-digital p{
+        font-size: 20px;
+    }
+    .nossos-cartoes h1{
+        font-size: 30px;
+    }
+     .nossos-cartoes p{
+        font-size: 20px;
+    }
+    .card img{
+        max-width: 120vh;
+    }
+    .card {
+        width: 29vh;
+        height: 58vh;
+    }
+    .card-cartao img{
+        max-width: 30vh;
+}
+}
+    @media screen and (min-device-width: 720px) and (max-device-width: 815px) {
+    .texto {
+            padding: 16px 50px 0 400px;
+    }
+    .texto h3{
+        font-size: 20px;
+    } 
+    .texto h5{
+        font-size: 15px;
+    }
+    .conta-digital h1{
+        font-size: 30px;
+    }
+    .conta-digital p{
+        font-size: 20px;
+    }
+    .nossos-cartoes h1{
+        font-size: 30px;
+    }
+     .nossos-cartoes p{
+        font-size: 20px;
+    }
+    .card img{
+        max-width: 120vh;
+    }
+    .card {
+        width: 29vh;
+        height: 58vh;
+    }
+    .card-cartao img{
+        max-width: 30vh;
+}  
+
+}
+
+@media screen and (min-device-width: 815px) and (max-device-width: 921px) {
+    .texto {
+        padding: 16px 50px 0 500px;
+}
+.texto h3{
+    font-size: 20px;
+} 
+.texto h5{
+    font-size: 15px;
+}  
+.conta-digital h1{
+    font-size: 30px;
+}
+.conta-digital p{
+    font-size: 20px;
+}
+.nossos-cartoes h1{
+    font-size: 30px;
+}
+ .nossos-cartoes p{
+    font-size: 20px;
+}
+.card img{
+    max-width: 120vh;
+}
+.card {
+    width: 29vh;
+    height: 58vh;
+}
+.card-cartao img{
+    max-width: 30vh;
+}
+
+}
+@media screen and (min-device-width: 921px) and (max-device-width: 1111px)  {
+    .texto {
+        padding: 16px 50px 0 600px;
+}
+.texto h3{
+    font-size: 25px;
+} 
+.texto h5{
+    font-size: 15px;
+}
+.conta-digital h1{
+    font-size: 30px;
+}
+.conta-digital p{
+    font-size: 20px;
+}
+.nossos-cartoes h1{
+    font-size: 30px;
+}
+ .nossos-cartoes p{
+    font-size: 20px;
+}
+.card img{
+    max-width: 120vh;
+}
+.card {
+    width: 29vh;
+    height: 58vh;
+}
+.card-cartao img{
+    max-width: 30vh;
+}  
+
+}
+@media screen and (min-device-width: 1111px) and (max-device-width: 1343px)  {
+.texto {
+        padding: 46px 50px 0 700px;
+}
+.texto h3{
+    font-size: 35px;
+    padding: 25px 0;
+} 
+.texto h5{
+    font-size: 15px;
+}
+.conta-digital h1{
+    font-size: 30px;
+}
+.conta-digital p{
+    font-size: 20px;
+}
+.nossos-cartoes h1{
+    font-size: 30px;
+}
+ .nossos-cartoes p{
+    font-size: 20px;
+}
+.card img{
+    max-width: 120vh;
+}
+.card {
+    width: 29vh;
+    height: 58vh;
+}
+.card-cartao img{
+    max-width: 30vh;
+}  
+}
+
+@media screen and (min-device-width: 1343px)  {
+.texto {
+        padding: 46px 50px 20px 900px;
+}
+.texto h3{
+    font-size: 35px;
+    padding: 25px 0;
+} 
+.texto h5{
+    font-size: 15px;
+}
+.conta-digital h1{
+    font-size: 30px;
+}
+.conta-digital p{
+    font-size: 20px;
+}
+.nossos-cartoes h1{
+    font-size: 30px;
+}
+ .nossos-cartoes p{
+    font-size: 20px;
+}
+.card img{
+    max-width: 120vh;
+}
+.card {
+    width: 29vh;
+    height: 58vh;
+}
+.card-cartao img{
+    max-width: 30vh;
+}  
+
+
+}
+
+/*PÁGINA NOSSOS SERVIÇOS*/
+/*MAIN div*/
+.grid-servicos{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 5% 5% 5% 5%;
+}
+
+/*MAIN img note*/
+.img-note{
+margin-bottom: 0;
+}
+
+/*MAIN sections*/
+.servicos-flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-top:3%;
+}
+
+
+/*MAIN imagem ícones*/
+
+@media (max-device-width: 480px){
+   .icone-servicos {
+    width:15px;
+    height:15px;
+    margin-bottom: 2%;
+}
+    }
+
+@media (min-device-width: 481px) and (max-device-width: 800px){
+    .icone-servicos {
+        width:25px;
+        height:25px;
+        margin-bottom: 2%;
+        }
+    }
+
+@media (min-device-width: 801px){
+    .icone-servicos {
+        width:40px;
+        height:40px;
+        margin-bottom: 2%;
+           
+    }
+       }  
+
+
+   
+
+/*MAIN textos sections*/
+.servicos-flex p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 20px;    
+     }
+
