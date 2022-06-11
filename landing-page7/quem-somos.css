@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*ESTILIZAÇÃO PAG QUEM SOMOS*/
+
+.container-area {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.quem-somos img {
+  max-width: 100%;
+  float: inline-start;
+}
+
+.titulo-quem-somos {
+  font-size: 30px;
+  color: #ff914d;
+}
+
+.texto-geral {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px 0px 16px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.F4BANK {
+  color: #ff914d;
+}
+p {
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1.32;
+}
+h4 {
+  margin: 20px;
+  font-size: 22px;
+  text-align: center;
+  color: #ff914d;
+  font-weight: bold;
+}
+
+footer img {
+  width: 100%;
+}
