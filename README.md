@@ -1,17 +1,32 @@
-## Landingpage - Projeto em Grupo (Amanda Viana | Mariana Abdias | Fabíola Barcelos)
-# F4BANK
+## 💻 PROJETO F4BANK
+O Projeto F4Bank foi um projeto desenvolvido em grupo de um grande banco público brasileiro para competir com as startups que tem surgido
 
-### O que funciona:
-Todos os links estão funcionando;
-o site está responsivo.
-Design by Mariana Abdias.
+### 🎯 Requisitos:
+- Criar uma landing page que comunique, além da proposta do banco, os produtos "Cartão sem taxa" e "Conta corrente digital", reforçando a segurança de um banco tradicional com décadas de história no país. 
 
-### O que não funciona:
-O formulário para abrir a conta não está ativo.
 
-## [Link do Surge para a landing page](https://petite-good-bye.surge.sh/)
+### 📝 O que funciona
+- Todos os links estão funcionando;
+- O site está responsivo.
 
-### Imagens
+
+### 🧪 Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+- [HTML]
+- [CSS]
+
+
+### 🚀 Link Surge 
+Para acessar ao site do projeto clique no link abaixo:
+- [Link para acessar o Projeto](https://petite-good-bye.surge.sh/)
+
+### 🤝 Colaboradores
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+- Mariana Abdias
+- Amanda Viana
+- Fabíola Barcelos
+
+### 🔖 Layout
 #### Página inicial
 
 ![image](https://user-images.githubusercontent.com/98291335/163875007-30646c42-df8a-4465-a603-34489ebc45bc.png)
